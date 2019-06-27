@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h3>{$array->name}</h3>
+	<h3>{$array->sex}</h3>
+	<h3>{$array->shuxue->s_fenshu}</h3>
+	<ul>
+		{foreach $fenarr as $k=>$v}
+		<li><h3>{$k}-----{$v->id}</h3></li>
+		<li><h3>{$k}-----{$v->user_id}</h3></li>
+		<li><h3>{$k}-----{$v->y_fenshu}</h3></li>
+		{/foreach}
+	</ul>
+	<a href="{:url('/index/index/index')}" title="">主页</a>
+	<br>
+	<br>
+	<br>
+	<br>
+
+
+</body>
+</html>
